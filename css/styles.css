@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap");
+
+/* ========== CSS Variables =========== */
+:root {
+  --ff-workSans: "Work Sans", sans-serif;
+  --ff-lato: "Lato", sans-serif;
+  --primary-color: #18a7ea;
+  --black-color: #000;
+  --black-light-color: #555;
+  --white-color: #fff;
+}
+
+html,
+body {
+  font-family: var(--font-workSans);
+}
