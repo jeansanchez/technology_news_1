@@ -9,9 +9,114 @@
   --black-color: #000;
   --black-light-color: #555;
   --white-color: #fff;
+  --padding-section: 2rem 0;
 }
 
 html,
 body {
-  font-family: var(--font-workSans);
+  font-family: var(--ff-workSans);
+}
+
+/*---------------------------- STYLES REUSED ------------------------------------ */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.btn-tendencias {
+  background-color: #e42788;
+}
+.btn-trucos {
+  background-color: #18a7ea;
+}
+.btn-tutoriales {
+  background-color: #f2430e;
+}
+.btn-accesorios {
+  background-color: #23bd23;
+}
+.btn-noticias {
+  background-color: rgb(184, 13, 184);
+}
+.btn-resenas {
+  background-color: rgb(234, 36, 36);
+}
+
+/*---------------------------------- HEADER ------------------------------------ */
+
+.header {
+  padding: 2rem 0 1rem 0;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+}
+
+.header__logo {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.header__logo span {
+  color: var(--primary-color);
+}
+
+.header__cta {
+  display: flex;
+  gap: 2.5rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+.header__cta input[type="text"] {
+  border: 1px solid var(--primary-color);
+  border-radius: 0.4rem;
+  padding-left: 0.8rem;
+}
+
+.header__btn {
+  width: 10rem;
+  padding: 0.8rem 1.6rem;
+  border-radius: 0.4rem;
+}
+
+.header__btn--login {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+}
+.header__btn--register {
+  border: 1px solid var(--primary-color);
+}
+
+.header__btn--register:hover {
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  transition: 5ms ease-in;
+}
+
+.header__btn--login:hover {
+  border: 1px solid var(--primary-color);
+  background-color: transparent;
+  color: var(--black-color);
+  transition: 5ms ease-in;
+}
+
+/*---------------------------------- NAVBAR ------------------------------------ */
+.nav {
+  background-color: var(--primary-color);
+}
+
+.nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+}
+
+.nav__link a {
+  color: var(--white-color);
+  font-size: 1.5rem;
+  font-weight: 400;
 }

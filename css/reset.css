@@ -11,14 +11,6 @@ html {
   font-size: 62.5%;
 }
 
-a,
-img,
-span,
-input,
-button {
-  display: block;
-}
-
 li {
   list-style: none;
 }
@@ -65,4 +57,14 @@ svg {
   width: 100%;
   display: block;
   fill: currentColor;
+}
+
+img,
+picture,
+video,
+iframe,
+figure {
+  max-width: 100%;
+  width: 100%;
+  display: block;
 }
