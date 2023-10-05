@@ -52,7 +52,7 @@ body {
 .header__wrapper {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 3rem;
+ margin-bottom: 3rem;
 }
 
 .header__logo {
