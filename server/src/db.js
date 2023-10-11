@@ -6,4 +6,4 @@ export const pool = createPool({
     password: 'Ajedrez14-17',
     port: 3306, 
     database: 'users'
-})
+});
