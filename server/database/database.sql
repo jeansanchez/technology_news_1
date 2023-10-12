@@ -10,6 +10,7 @@ CREATE TABLE admins (
     email VARCHAR(255),
     password VARCHAR(255),
     role ENUM('admin', 'editor'), 
+    ADD CURRENT_TIMESTAMP(),
+    ADD CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP(),
     PRIMARY KEY (id)
-);
-
+)
