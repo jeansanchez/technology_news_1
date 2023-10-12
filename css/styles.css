@@ -23,6 +23,18 @@ body {
   width: 80%;
   margin: 0 auto;
 }
+.btn {
+  width: 100px;
+  height: 25px;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
 
 .btn-tendencias {
   background-color: #e42788;
