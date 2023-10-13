@@ -207,16 +207,17 @@ body {
   font-size: 1.2rem;
 }
 
+/* ========== NOTICES =========== */
 
-/* NOTICES ----- NOTICES ----- NOTICES  */
 .notices {
   padding: 2rem 0;
 }
 
 .notices__wrapper {
   height: 800px;
-  /* background-color: #e42788; */
+  margin-bottom: 8rem;
 }
+
 .notices__title {
   font-size: 3rem;
   font-weight: 700;
@@ -232,7 +233,6 @@ body {
 
 .notices__section {
   width: 70%;
-  /* background-color: #fccb90; */
 }
 
 .notices__card {
@@ -255,7 +255,6 @@ body {
 .notices__info {
   width: 600px;
   height: 160px;
-  /* background-color: #fc6f43; */
 }
 
 .notices__info h2 {
@@ -282,11 +281,9 @@ body {
 .mostPopular {
   width: 30%;
   height: 200px;
-  /* background-color: #18a7ea; */
   padding: 20px;
 }
 .mostPopular__wrapper {
-  /* background-color: #4f5665; */
   height: 150px;
 }
 .mostPopular__title {
@@ -322,7 +319,6 @@ body {
   flex-basis: 75%;
   padding: 1.6rem;
   height: 80px;
-  /* background-color: #fccb90; */
 }
 
 .mostPopular__info h2 {
@@ -348,3 +344,77 @@ body {
   color: var(--white-color);
 }
 
+/* ========== ARTICLES =========== */
+
+.articles {
+  padding: 2rem 0;
+  margin: 80px 0 0 0;
+}
+
+.articles__wrapper {
+  height: 500px;
+  background-color: #e42788;
+}
+
+.articles__title {
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4rem 0;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.articles__flex {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.articles__card {
+  flex: 1;
+}
+
+.articles__card-main {
+  flex-basis: 50%;
+}
+.articles__card-second {
+  flex-basis: 25%;
+}
+
+.articles__picture {
+  position: relative;
+}
+
+.articles__picture img {
+  width: 100%;
+  height: 300px;
+  opacity: 1;
+}
+
+.articles__info {
+  position: absolute;
+  top: 170px;
+  left: 10px;
+  width: 100px;
+  height: 120px;
+  width: 100%;
+  padding: 1rem;
+  color: #fff;
+}
+
+.articles__description {
+  line-height: 2.5rem;
+  font-weight: 500;
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  margin: 5px 0;
+}
+
+.articles__description-xl {
+  font-size: 2.5rem;
+}
+
+.articles__dates {
+  font-size: 1.1rem;
+}
