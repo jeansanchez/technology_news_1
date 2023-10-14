@@ -23,6 +23,7 @@ a {
 
 img {
   height: auto;
+  object-fit: cover;
 }
 
 input,
