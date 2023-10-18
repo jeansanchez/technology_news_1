@@ -556,6 +556,7 @@ body {
 .column .two {
   color: #fff;
   font-size: 14px;
+  width: 9rem;
   font-weight: bold;
   padding: 0px 24px;
   letter-spacing: 0.25px;
@@ -591,7 +592,7 @@ body {
 
 .social-icon a {
   text-decoration: none;
-  font-size: 15px;
+  font-size: 20px;
   width: 45px;
   height: 45px;
   line-height: 45px;
