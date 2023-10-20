@@ -5,7 +5,7 @@ export const getUsers = async (req, res) => {
     const [rows] = await pool.query("SELECT * FROM admins");
     res.json(rows);
   } catch (error) {
-    return res.status(500).json({ message: "Something goes wrong" });
+    return res.status(500).json({ message: "Something goes wrong1" });
   }
 };
 
@@ -20,7 +20,7 @@ export const getUser = async (req, res) => {
       });
     res.json(rows[0]);
   } catch (error) {
-    return res.status(500).json({ message: "something goes wrong" });
+    return res.status(500).json({ message: "something goes wrong2" });
   }
 };
 
@@ -41,7 +41,7 @@ export const createUsers = async (req, res) => {
       role,
     });
   } catch (error) {
-    return res.status(500).json({ message: "something goes wrong" });
+    return res.status(500).json({ message: "something goes wrong3" });
   }
 };
 
@@ -56,7 +56,7 @@ export const deleteUsers = async (req, res) => {
       });
     res.sendStatus(204);
   } catch (error) {
-    return res.status(500).json({ message: "something goes wrong" });
+    return res.status(500).json({ message: "something goes wrong4" });
   }
 };
 
@@ -78,6 +78,6 @@ export const updateUsers = async (req, res) => {
 
     res.json(rows[0]);
   } catch (error) {
-    return res.status(500).json({ message: "something goes wrong" });
+    return res.status(500).json({ message: "something goes wrong5" });
   }
 };
