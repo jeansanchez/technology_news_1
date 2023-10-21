@@ -304,6 +304,8 @@ body {
 .mostPopular__card {
   display: flex;
   margin: 2rem 0;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 15px;
 }
 
 .mostPopular__picture {
@@ -533,7 +535,7 @@ body {
 }
 .column3 {
   min-height: 200px;
-  padding: 50px 20px;
+  padding: 15px 20px;
   text-align: center;
   grid-area: column3;
 }
@@ -546,14 +548,18 @@ body {
   font-size: 3rem;
   color: var(--white-color);
   text-align: center;
+  text-decoration: none;
 }
 
 .column1 p {
   font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.3em;
+  text-decoration: none;
 }
 
 .animated-list li {
-  font-size: 24px;
+  font-size: 2rem;
   transition: transform 0.3s, color 0.3s;
   cursor: pointer;
 }
@@ -652,6 +658,7 @@ body {
 }
 
 .text-2 li {
+  text-transform: capitalize;
   font-size: 1.4rem;
   transition: transform 0.3s, color 0.3s;
 }
