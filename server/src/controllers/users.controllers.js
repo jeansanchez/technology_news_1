@@ -1,5 +1,5 @@
 import { pool } from "../db.js";
-import bcrypt from "bcrypt"
+import bcrypt from "bcrypt";
 
 export const getUsers = async (req, res) => {
   try {
@@ -28,9 +28,8 @@ export const getUser = async (req, res) => {
 export const createUsers = async (req, res) => {
   const { name, lastname, username, email, password, role } = req.body;
   try {
-  
-    const hashPassword = password
-    
+    const hashPassword = password;
+
     bcrypt.hash(password, 10, async function (err, password) {
       const [rows] = await pool.query(
         "INSERT INTO admins(name, lastname, username, email, password, role) VALUES (?, ?, ?, ?, ?, ?)",
@@ -43,11 +42,9 @@ export const createUsers = async (req, res) => {
         username,
         email,
         password,
-        role
+        role,
       });
-    })
-
-   
+    });
   } catch (error) {
     return res.status(500).json({ message: "something goes wrong3" });
   }
@@ -73,26 +70,24 @@ export const updateUsers = async (req, res) => {
   const { name, lastname, username, email, password, role } = req.body;
 
   try {
+    const hashPassword = password;
 
-    const hashPassword = password
-
-    bcrypt.hash (password, 10, async function (err, password) {
+    bcrypt.hash(password, 10, async function (err, password) {
       const [result] = await pool.query(
         "UPDATE admins SET name = IFNULL(?, name), lastname = IFNULL(?, lastname), username = IFNULL(?, username), email = IFNULL(?, email), password = IFNULL(?, password), role = IFNULL(?, role) WHERE id = ?",
         [name, lastname, username, email, password, role, id]
       );
       if (result.affectedRows === 0)
         return res.status(404).json({
-          message: "User not found"
-          
+          message: "User not found",
         });
-  
-      const [rows] = await pool.query("SELECT * FROM admins WHERE id = ?", [id]);
-  
+
+      const [rows] = await pool.query("SELECT * FROM admins WHERE id = ?", [
+        id,
+      ]);
+
       res.json(rows[0]);
-    }
-    )
-   
+    });
   } catch (error) {
     return res.status(500).json({ message: "something goes wrong5" });
   }
