@@ -70,14 +70,12 @@ figure {
   display: block;
 }
 
-p:hover {
-  text-decoration: underline;
-}
-
 h2:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 h3:hover {
   text-decoration: underline;
+  cursor: pointer;
 }
