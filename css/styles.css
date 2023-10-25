@@ -680,9 +680,45 @@ body {
 /* ========== RESPONSIVE =========== */
 
 @media (max-width: 390px) {
+  .notices__info {
+    & h2 {
+      font-size: 21px;
+      line-height: 1.1em;
+      color: #333;
+    }
+
+    & p {
+      font-size: 12px;
+      line-height: 1.4em;
+    }
+
+    & .notices__dates {
+      padding: 0.5em 0;
+    }
+  }
+
+  .notices__card {
+    gap: 1rem;
+    margin: 1rem 0;
+    & .notices__picture img {
+      min-width: 90px;
+      height: 90px;
+    }
+
+    & figure {
+      max-width: auto;
+      width: auto;
+    }
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .notices__dates {
+    padding: 0.8em 0;
+  }
+  .notices__card {
+    margin: 2rem 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -697,16 +733,22 @@ body {
     grid-template-areas: "cln1";
   }
 
-  .notices__picture img {
-    height: 150px;
+  .notices__title {
+    font-size: 24px;
+  }
+
+  .notices__card {
+    border-bottom: 1px solid #ddd;
   }
 
   .notices__info {
-    & .notices__dates {
+    &.notices__dates {
       padding: 1px 0;
     }
     & h2 {
-      font-size: 1.5rem;
+      font-size: 21px;
+      line-height: 1.1em;
+      color: #333;
     }
 
     & p {
@@ -714,9 +756,11 @@ body {
       line-height: 1.4em;
       color: #0f0f0fbf;
       padding: 0;
-      overflow: hidden;
-      text-overflow: ellipsis;
     }
+  }
+
+  .notices__picture img {
+    height: 140px;
   }
 
   .notices__dates span {
@@ -803,9 +847,16 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-  .mostPopular__info {
+  .mostPopular__card {
+    margin: 1rem 0;
+    gap: 1em;
     padding: 0;
-    padding-left: 1rem;
+    & .mostPopular__info {
+      padding: 0;
+      overflow: hidden;
+      white-space: wrap;
+      text-overflow: ellipsis;
+    }
   }
 
   .mostPopular__picture img {
