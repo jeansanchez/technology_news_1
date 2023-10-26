@@ -13,4 +13,15 @@ CREATE TABLE admins (
     ADD CURRENT_TIMESTAMP(),
     ADD CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP(),
     PRIMARY KEY (id)
-)
+);
+
+CREATE TABLE articles (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    title VARCHAR(100) NOT NULL,
+    article VARCHAR(2500) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+-- ALTER TABLE articless
+-- ADD CONSTRAINT FK_article_admins FOREIGN KEY (articleID)
+-- REFERENCES admins (ID);

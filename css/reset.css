@@ -69,3 +69,13 @@ figure {
   width: 100%;
   display: block;
 }
+
+h2:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h3:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
