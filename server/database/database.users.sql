@@ -22,6 +22,16 @@ CREATE TABLE articles (
     PRIMARY KEY (id)
 );
 
+CREATE TABLE profiles (
+    id INT(11) NOT NULL AUTO_INCREMENT,
+    email VARCHAR(100) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    username VARCHAR(2500) NOT NULL,
+    PRIMARY KEY (id)
+);
+
+
+
 -- ALTER TABLE articless
 -- ADD CONSTRAINT FK_article_admins FOREIGN KEY (articleID)
 -- REFERENCES admins (ID);
