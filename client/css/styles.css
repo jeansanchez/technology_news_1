@@ -90,14 +90,14 @@ body {
 }
 
 .header__btn {
-  width: 10rem;
+  width: 12rem;
   padding: 0.8rem 1.6rem;
   border-radius: 0.4rem;
 }
 
 .header__btn--login {
-  background-color: var(--primary-color);
-  color: var(--white-color);
+  border: 1px solid var(--primary-color);
+  color: var(--black-color);
 }
 .header__btn--register {
   border: 1px solid var(--primary-color);
@@ -110,10 +110,10 @@ body {
 }
 
 .header__btn--login:hover {
-  border: 1px solid var(--primary-color);
-  background-color: transparent;
-  color: var(--black-color);
+  background-color: var(--primary-color);
+  color: var(--white-color);
   transition: 5ms ease-in;
+  wi
 }
 
 /*---------------------------------- NAVBAR ------------------------------------ */
@@ -864,3 +864,4 @@ body {
     min-width: 70px;
   }
 }
+/*d*/
