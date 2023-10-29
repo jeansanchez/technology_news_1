@@ -31,6 +31,7 @@ CREATE TABLE profiles (
 );
 
 
+
 -- ALTER TABLE articless
 -- ADD CONSTRAINT FK_article_admins FOREIGN KEY (articleID)
 -- REFERENCES admins (ID);
