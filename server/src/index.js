@@ -5,6 +5,7 @@ import newsController from "./routes/news.routes.js";
 import morgan from "morgan";
 import cors from "cors";
 
+import newsRoutes from "./routes/news.routes.js";
 const app = express();
 app.use(express.json());
 app.use(morgan("dev"));
@@ -13,6 +14,7 @@ app.use(cors());
 app.use("/api/", usersRoutes);
 app.use("/api/", profilesController);
 app.use("/api/", newsController);
+app.use("/api/", newsRoutes);
 
 app.use((req, res, next) => {
   res.status(404).json({message: 'Not found'})
