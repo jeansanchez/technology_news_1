@@ -49,7 +49,7 @@ export const login = async (req, res) => {
     }
   };
 
-  export const deleteProfiles = async (req, res) => {
+export const deleteProfiles = async (req, res) => {
     try {
       const [result] = await pool.query("DELETE FROM profiles WHERE id = ?", [
         req.params.id,
@@ -63,3 +63,5 @@ export const login = async (req, res) => {
       return res.status(500).json({ message: "something goes wrong4" });
     }
   };
+
+export const logout = async (req, res) => {};
