@@ -41,7 +41,7 @@ export const login = async (req, res) => {
           res.status(200).json({ message: "password correct" });
         }
       } else {
-        res.status(401).json({ message: "Usuario no encontrado" });
+        res.status(401).json({ message: "User not found" });
       }
     } catch (error) {
       console.log(error);
