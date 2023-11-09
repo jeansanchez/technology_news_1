@@ -7,63 +7,93 @@
       rel="shortcut icon"
       href="images/favicon-32x32.png"
       type="image/png" />
-          <!-- ====== Fontawesome  ====== -->
-    <link
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    rel="stylesheet" />
-  <!-- ====== Swiper CSS ====== -->
-  <link
-    rel="stylesheet"
-    href="https://unpkg.com/swiper/swiper-bundle.min.css" /><!--  -->
     <!-- ====== Custom CSS ====== -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <title>Tech Blogger</title>
   </head>
 
   <body>
     <header class="header">
       <div class="header__wrapper container">
-
-        <div class="toggle">
-          <input type="checkbox" class="toggle__checkbox" id="toggle-checkbox" />
-          <label for="toggle-checkbox" class="toggle__menu" id="toggle-menu">
-            <i class="fa-solid fa-bars"></i>
-          </label>
-          <label for="toggle-checkbox" class="toggle__close" id="toggle-close">
-            <i class="fa-solid fa-xmark"></i>
-          </label>
+        <h1 class="header__logo">Tecno<span>blogger</span></h1>
+        <div class="header__cta">
+          <input type="text" placeholder="Search" />
+          <a href="login.html"><button class="header__btn header__btn--login">Ingresar </button></a>
+          <a href="formRegistro.html"><button class="header__btn header__btn--register">Registrarse</button></a> 
         </div>
-
-        <div class="header__logo">
-          <a href="index.html"><h2>Tecno <span>Blog</span></h2></a>
-        </div>
-
-        <div class="header__search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-
-        <nav class="navbar">
-          <ul class="navbar__nav">
-            <li class="navbar__item">
-              <a class="navbar__link" href="">Tecnologia</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="">Reseñas</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="">trucos</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="">Tutoriales</a>
-            </li>
-            <li class="navbar__item">
-              <a class="navbar__link" href="">Tendencias</a>
-            </li>
-          </ul>
-        </nav>
       </div>
     </header>
+
+    <nav class="nav">
+      <ul class="nav__wrapper container">
+        <li class="nav__link"><a href="">Noticias</a></li>
+        <li class="nav__link"><a href="">Reseñas</a></li>
+        <li class="nav__link"><a href="">Tutoriales</a></li>
+        <li class="nav__link"><a href="">Trucos</a></li>
+        <li class="nav__link"><a href="">Accesorios</a></li>
+        <li class="nav__link"><a href="">Tendencias</a></li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <div class="hero__box box1">
+        <figure class="hero__picture">
+          <img src="./images/blog-img1.jpg" alt="img-blog1" />
+        </figure>
+        <div class="hero__card">
+          <button class="btn btn-tutoriales">tutoriales</button>
+          <h3>google just showed us the future of gaming</h3>
+          <div class="hero__dates">
+            <span>Will Maldonado</span>
+            <span>Sep 22,2023</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__box box2">
+        <figure class="hero__picture">
+          <img src="./images/blog-img2.jpg" alt="img-blog1" />
+        </figure>
+        <div class="hero__card">
+          <button class="btn btn-trucos">trucos</button>
+          <h3>google just showed us the future of gaming</h3>
+          <div class="hero__dates">
+            <span>Will Maldonado</span>
+            <span>Sep 22,2023</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__box box3">
+        <figure class="hero__picture">
+          <img src="./images/blog-img3.jpg" alt="img-blog1" />
+        </figure>
+        <div class="hero__card">
+          <button class="btn btn-tendencias">tendencias</button>
+          <h3>google just showed us the future of gaming</h3>
+          <div class="hero__dates">
+            <span>Will Maldonado</span>
+            <span>Sep 22,2023</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__box box4">
+        <figure class="hero__picture">
+          <img src="./images/blog-img4.jpg" alt="img-blog1" />
+        </figure>
+        <div class="hero__card">
+          <button class="btn btn-noticias">noticias</button>
+          <h3>google just showed us the future of gaming</h3>
+          <div class="hero__dates">
+            <span>Will Maldonado</span>
+            <span>Sep 22,2023</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="notices">
       <div class="notices__wrapper container">
@@ -83,9 +113,8 @@
                 </div>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ratione
                   Ratione unde dolore perspiciatis eveniet, vel dolores
-                  repudiandae consequuntur molestias. Tempora, totam!
+                  
                 </p>
               </div>
             </div>
@@ -102,9 +131,8 @@
                 </div>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ratione
                   Ratione unde dolore perspiciatis eveniet, vel dolores
-                  repudiandae consequuntur molestias. Tempora, totam!
+                 
                 </p>
               </div>
             </div>
@@ -121,9 +149,8 @@
                 </div>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ratione
                   Ratione unde dolore perspiciatis eveniet, vel dolores
-                  repudiandae consequuntur molestias. Tempora, totam!
+                  
                 </p>
               </div>
             </div>
@@ -140,9 +167,8 @@
                 </div>
                 <p>
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Ratione
                   Ratione unde dolore perspiciatis eveniet, vel dolores
-                  repudiandae consequuntur molestias. Tempora, totam!
+                  
                 </p>
               </div>
             </div>
@@ -190,9 +216,9 @@
                     <p>sep 26, 2023 | 3 min read</p>
                   </div>
                 </div>
-         <!--        <div class="mostPopular__cta">
+                <div class="mostPopular__cta">
                   <button class="mostPopular__btn">cargar mas ></button>
-                </div> -->
+                </div>
               </div>
             </div>
           </div>
@@ -200,71 +226,60 @@
       </div>
     </section>
 
-   <section class="articles">
+    <section class="articles">
       <div class="articles__wrapper">
         <h2 class="articles__title">articulos que debes conocer</h2>
         <div class="articles__flex container">
-          <swiper-container class="mySwiper"  pagination="true" pagination-clickable="true" navigation="true" space-between="30"
-            loop="true">
-              <div class="swiper-slide" >  
-                  <figure class="articles__picture">
-                  <img src="./images/blog-img1.jpg" alt="img-blog1" />
-                  <div class="articles__button">
-                    <button class="btn btn-noticias">Noticias</button>
-                  </div>
-                  <div class="articles__info">
-                    <h3 class="articles__description">
-                      google just showed us the future of gaming
-                    </h3>
-                  </div>
-                </figure>
+          <div class="articles__card articles__card-main">
+            <figure class="articles__picture">
+              <img src="./images/blog-img8.jpg" alt="img-blog1" />
+              <div class="articles__info">
+                <button class="btn btn-trucos">Trucos</button>
+                <h3 class="articles__description articles__description-xl">
+                  google just showed us the future of gaming
+                </h3>
+                <div class="articles__dates">
+                  <span>Will Maldonado</span>
+                  <span>Sep 22,2023</span>
+                </div>
               </div>
+            </figure>
+          </div>
 
-              <div class="swiper-slide" >  
-                  <figure class="articles__picture">
-                  <img src="./images/blog-img2.jpg" alt="img-blog1" />
-                    <div class="articles__button">
-                      <button class="btn btn-noticias">Noticias</button>
-                    </div>
-                    <div class="articles__info">
-                    <h3 class="articles__description">
-                      google just showed us the future of gaming
-                    </h3>
-                  </div>
-                </figure>
+          <div class="articles__card articles__card-second">
+            <figure class="articles__picture">
+              <img src="./images/blog-img10.jpg" alt="img-blog1" />
+              <div class="articles__info">
+                <button class="btn btn-tutoriales">tutoriales</button>
+                <h3 class="articles__description">
+                  google just showed us the future of gaming
+                </h3>
+                <div class="articles__dates">
+                  <span>Will Maldonado -</span>
+                  <span>Sep 22,2023</span>
+                </div>
               </div>
-        
-              <div class="swiper-slide">
-                  <figure class="articles__picture">
-                    <img src="./images/blog-img11.jpg" alt="img-blog1" />
-                    <div class="articles__button">
-                      <button class="btn btn-noticias">Noticias</button>
-                    </div>
-                    <div class="articles__info">
-                    <h3 class="articles__description">
-                      google just showed us the future of gaming
-                    </h3>
-                  </div>
-                  </figure>
+            </figure>
+          </div>
+
+          <div class="articles__card articles__card-second">
+            <figure class="articles__picture">
+              <img src="./images/blog-img11.jpg" alt="img-blog1" />
+              <div class="articles__info">
+                <button class="btn btn-noticias">Noticias</button>
+                <h3 class="articles__description">
+                  google just showed us the future of gaming
+                </h3>
+                <div class="articles__dates">
+                  <span>Will Maldonado -</span>
+                  <span>Sep 22,2023</span>
+                </div>
               </div>
-            
-              <div class="swiper-slide">
-                    <figure class="articles__picture">
-                      <img src="./images/blog-img3.jpg" alt="img-blog1" />
-                      <div class="articles__button">
-                        <button class="btn btn-noticias">Noticias</button>
-                      </div>
-                      <div class="articles__info">
-                      <h3 class="articles__description">
-                        google just showed us the future of gaming
-                      </h3>
-                    </div>
-                    </figure>
-              </div> 
-          </swiper-container>
+            </figure>
+          </div>
         </div>
       </div>
-    </section> 
+    </section>
 
     <section class="blogPost">
       <div class="blogPost__wrapper container">
@@ -394,19 +409,24 @@
       </div>
     </section>
 
+    <!-- FOOTER -->
+
     <footer class="footer">
-      <div class="container-footer">
-      <div class="column">
-        <h2>TecnoBlogger</h2>
+      <div class="container__footer">
+      <div class="column1">
+        <h2 class="header__logo">TECNO<span>BLOGGER</span></h2>
         <p>
-          Tu Socio Confiable para Explorar las Últimas Tendencias, <br> Avances y
-          Transformaciones Digitales. <br>
+          Tu Socio Confiable para Explorar las Últimas Tendencias, 
+          
+           Avances y
+          Transformaciones Digitales. 
+          
           Únete a Nosotros y Lidera la Revolución Tecnológica.
         </p>
       </div>
 
-      <div class="column">
-        <h2>otras noticias</h2>
+      <div class="column2">
+        <h2>SECCIONES</h2>
         <ul class="animated-list">
          
           <li>Tecnología</li>
@@ -416,17 +436,16 @@
         </ul>
       </div>
 
-      <div class="column">
-        <h2>suscríbete</h2>
-
+      <div class="column3">
+        <h2>SUSCRÍBETE</h2>
         <form action="send-button" class="send-button">
           <input class="one" type="text" placeholder="email" />
           <input class="two" type="submit" value="enviar" class="submit" />
         </form>
       </div>
 
-      <div class="text-1">
-      <div class="social-icon">
+      <div class="icons">
+      <div class="social__icon">
         <a href="#" class="fa fa-facebook"></a>
         <a href="#" class="fa fa-twitter"></a>
         <a href="#" class="fa fa-instagram"></a>
@@ -437,18 +456,17 @@
             >&copy; 2023 <b>TecnoBlogger</b> - Todos los Derechos Reservados.</small
           >
         </div>
-          <ul class="text-2">
+        <div class="text-2">
+          <ul>
             <li>inicio</li>
             <li>politicas</li>
             <li>preguntas frecuentes</li>
             <li>Términos y Condiciones</li>
           </ul>
         </div>
+        </div>
       </div>
     </div>
     </footer>
-
-      <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
   </body>
 </html>
