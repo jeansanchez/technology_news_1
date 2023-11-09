@@ -155,24 +155,15 @@ body {
 }
 
 .notices__flex {
-<<<<<<< HEAD
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-=======
   display: grid;
   grid-template-columns: 70% 30%;
   grid-template-areas: "cln1 cln2";
   gap: 2rem;
->>>>>>> c46d1544dcacfec5cbb9a2c7ef51f845f83c3a10
 }
 
 .notices__section {
   width: 100%;
-<<<<<<< HEAD
-=======
   grid-area: cln1;
->>>>>>> c46d1544dcacfec5cbb9a2c7ef51f845f83c3a10
 }
 
 .notices__card {
@@ -225,22 +216,15 @@ body {
   font-weight: 400;
   line-height: 2rem;
   color: #070707;
-<<<<<<< HEAD
-  margin-bottom: 1rem;
-=======
   overflow: hidden;
   text-overflow: ellipsis;
->>>>>>> c46d1544dcacfec5cbb9a2c7ef51f845f83c3a10
 }
 
 .mostPopular {
   width: 100%;
-<<<<<<< HEAD
-=======
   height: 200px;
   padding: 20px;
   grid-area: cln2;
->>>>>>> c46d1544dcacfec5cbb9a2c7ef51f845f83c3a10
 }
 
 .mostPopular__wrapper {
@@ -637,31 +621,6 @@ swiper-container {
 
 /* ========== RESPONSIVE =========== */
 
-<<<<<<< HEAD
-@media screen and (min-width: 470px) {
-  .notices__picture {
-    max-width: 200px;
-  }
-  .notices__card {
-    padding-bottom: 3rem;
-  }
-
-  .notices__picture img {
-    width: 100%;
-    height: 17rem;
-  }
-
-  .notices__info h2 {
-    font-size: 2rem;
-  }
-
-  .notices__dates span {
-    font-size: 1.4rem;
-  }
-
-  .notices__info p {
-    font-size: 1.6rem;
-=======
 @media (max-width: 390px) {
   .notices__info {
     & h2 {
@@ -701,7 +660,6 @@ swiper-container {
   }
   .notices__card {
     margin: 2rem 0;
->>>>>>> c46d1544dcacfec5cbb9a2c7ef51f845f83c3a10
   }
 }
 
