@@ -1,13 +1,5 @@
-<<<<<<< HEAD
-node_modules
-package-lock.json
-package.json
-.env
-.prettierrc.json
-=======
 /node_modules
 package-lock.json
 package.json
 .env
 .prettierrc.json
->>>>>>> dev
