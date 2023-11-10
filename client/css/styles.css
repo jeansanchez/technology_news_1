@@ -124,7 +124,11 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
+<<<<<<< HEAD
   /* border-bottom: 2px solid var(--primary-color); */
+=======
+  
+>>>>>>> dev
 }
 
 .nav__link--current {
@@ -886,6 +890,10 @@ body {
     min-width: 70px;
   }
 }
+<<<<<<< HEAD
+=======
+/*d*/
+>>>>>>> dev
 
 /*PAGE STYLES CSS RESEÑAS*/
 
