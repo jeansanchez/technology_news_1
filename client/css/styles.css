@@ -113,7 +113,6 @@ body {
   background-color: var(--primary-color);
   color: var(--white-color);
   transition: 5ms ease-in;
-  wi
 }
 
 /*---------------------------------- NAVBAR ------------------------------------ */
@@ -125,7 +124,25 @@ body {
   display: flex;
   justify-content: space-between;
   padding: 1rem 0;
-  border-bottom: 2px solid var(--primary-color);
+  
+}
+
+.nav__link--current {
+  color: var(--primary-color) !important;
+  font-weight: bold !important; 
+  height: 100%;
+  position: relative;
+}
+
+.nav__link--current::after{
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: #2196F3;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  bottom: -10px;
 }
 
 .nav__link a {
@@ -865,3 +882,17 @@ body {
   }
 }
 /*d*/
+
+/*PAGE STYLES CSS RESEÑAS*/
+
+.main{
+  width: 80%;
+  display: flex;
+margin: 0 auto;
+  padding: 100px 0;
+}
+
+.main__title{
+  margin: 0 auto;
+
+}
