@@ -654,7 +654,7 @@ body {
   display: flex;
 }
 
-.social__icon a {
+.social__icon i {
   text-decoration: none;
   font-size: 20px;
   width: 45px;
@@ -668,7 +668,7 @@ body {
   transition: all 0.4s ease-in-out;
 }
 
-.social__icon a:hover {
+.social__icon i:hover {
   transform: scale(1.2);
 }
 
