@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body {
   background-color: #f5f5f5;
   font-family: "Work Sans", sans-serif;
@@ -62,6 +63,9 @@ body {
 .form-register a:hover {  
   color: blue;
   text-decoration: underline;
+}
+.form-register:hover > a {
+  text-decoration: none;
 }
 
 .form-register .botons {

@@ -35,7 +35,6 @@ body {
 }
 
 .form-register h1 {
-    height: 70px;
     text-align: center;
     font-size: 30px;
     font-weight: 900;
@@ -44,6 +43,14 @@ body {
     & span {
         color:#18a7ea;
     }
+  }
+  .form-register h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #3e4148;
+    margin: 16px 0;
   }
 .form-register p {
   height: 50px;
@@ -62,6 +69,10 @@ body {
 .form-register a:hover {  
   color: blue;
   text-decoration: underline;
+}
+
+.form-register:hover > a {
+  text-decoration: none;
 }
 
 .form-register .botons {

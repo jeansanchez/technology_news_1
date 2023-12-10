@@ -23,7 +23,7 @@ body {
   transition: color 0.3s ease, transform 0.3s ease;
   position: absolute;
   left: 50px;
-  top:50px
+  top: 50px;
 }
 
 .material-symbols-outlined:hover {
@@ -68,4 +68,17 @@ body {
 
 .footer p {
   margin: 0;
+}
+
+@media screen and (max-width: 576px) {
+  .container {padding: 32px;
+  }
+  .title {
+    text-align: center;
+  }
+
+  .material-symbols-outlined {
+    position: static;
+  margin-right: 16px;
+  }
 }
