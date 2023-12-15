@@ -13,7 +13,7 @@ body {
   background: #ffff;
   padding: 30px;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 24px;
   border-radius: 4px;
   color: white;
   box-shadow: 7px 13px 37px #c4c4c4;
@@ -36,7 +36,6 @@ body {
 }
 
 .form-register h1 {
-    height: 70px;
     text-align: center;
     font-size: 30px;
     font-weight: 900;
@@ -45,6 +44,14 @@ body {
     & span {
         color:#18a7ea;
     }
+  }
+  .form-register h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 800;
+    line-height: 40px;
+    color: #3e4148;
+    margin-bottom: 16px;
   }
 .form-register p {
   height: 50px;
