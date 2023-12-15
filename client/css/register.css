@@ -12,9 +12,8 @@ body {
   width: 400px;
   background: #ffff;
   padding: 30px;
-  margin: auto;
-  margin-top: 24px;
-  border-radius: 4px;
+  margin: 24px auto 0;
+  border-radius: 8px;
   color: white;
   box-shadow: 7px 13px 37px #c4c4c4;
 }

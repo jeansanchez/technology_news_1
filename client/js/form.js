@@ -1,0 +1,1 @@
+const Register = document.getElementById('Register')

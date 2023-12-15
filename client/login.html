@@ -3,30 +3,74 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/login.css">
-    <title>Formulario registro</title>
+    <link rel="stylesheet" href="./css/login.css" />
+    <!-- ====== Boxicons  ====== -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Formulario login</title>
   </head>
   <body>
-    <section class="form-register">
-      <a href="index.html"><h1 class="header__logo">Tecno<span>blogger</span></h1></a>
-      
-        <h2 class="header__logo">Iniciar sesión</h2>
-      
-      <input class="controls"
-        type="email"
-        name="correo"
-        id="correo"
-        placeholder="Ingrese su correo" required
-      />
-      <input class="controls"
-        type="password"
-        name="contraseña"
-        id="contraseña"
-        placeholder="Ingrese su contraseña" required
-      />
-      <p><a href="#">Olvide mi contraseña</a></p>
-      <input class="botons" type="submit" value="Registrar">
-      <p>¿ No tienes cuenta ?<a href="register.html"> inscríbete</a></p>
+    <section class="container__form">
+      <div class="welcome">
+        <div class="info">
+          <h2>¡¡Bienvenido nuevamente!!</h2>
+          <p>Si aun no tienes una cuentra por favor registrese aqui</p>
+          <input type="button" value="Registrarse" id="sign-in" />
+        </div>
+      </div>
+      <div class="information">
+        <div class="information__childs">
+          <a href="index.html"
+            ><h1 class="header__name">Tecno<span>blogger</span></h1></a>
+
+             <h2 class="header__h2">Iniciar sesión</h2>
+             <form class="form">
+         <label >
+              <i class='bx bx-envelope' ></i>
+                        <input
+                        class="controls"
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Ingrese su correo"
+                        required
+                        />
+          </label>
+
+          <label >
+            <i class='bx bx-lock-alt'></i>
+            <input
+                      class="controls"
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Ingrese su contraseña"
+                      required
+                    />
+          </label>
+        </form>
+          <p><a href="#">Olvide mi contraseña</a></p>
+          <input class="botons" type="submit" value="Iniciar sesión" />
+
+          <div class="social__message">
+            <div class="line"></div>
+            <p class="message">Iniciar con cuentas sociales</p>
+            <div class="line"></div>
+        </div>
+        <div class="footer__subtitle">
+          <div class="footer__links">
+            <i class='bx bxl-google'></i>
+            
+          </div>
+          <div class="footer__links">
+            <i class='bx bxl-facebook-circle' ></i>
+            
+          </div>
+          <div class="footer__links">
+            <i class='bx bxl-linkedin-square'></i>
+            
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>
