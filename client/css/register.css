@@ -11,6 +11,8 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-image: url(../images/fondo-formularios.png);
+  background-size: cover;
 }
 .form-register {
   display: flex;
@@ -150,7 +152,8 @@ body {
 
 .footer__links i {
   border-radius: 50%;
-  padding: 15px;
+  font-size: 30px;
+  padding: 4px;
   cursor: pointer;
   margin: 0 10px;
   color: #555;
