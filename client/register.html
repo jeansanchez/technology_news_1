@@ -3,40 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/register.css" />
+    <!-- ====== Boxicons  ====== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
     <title>Formulario registro</title>
   </head>
+
   <body>
     <section class="form-register">
-        <a href="index.html"><h1 class="header__logo">Tecno<span>blogger</span></h1></a>
-        <h2 class="header__logo">Registrarse</h2>
-      <input class="controls"
-        type="text"
-        name="nombres"
-        id="nombres"
-        placeholder="Ingrese su nombre" required
-      />
-      <input class="controls"
-        type="text"
-        name="apellidos"
-        id="apellidos"
-        placeholder="Ingrese su apellido" required
-      />
-      <input class="controls"
-        type="email"
-        name="correo"
-        id="correo"
-        placeholder="Ingrese su correo" required
-      />
-      <input class="controls"
-        type="password"
-        name="contraseña"
-        id="contraseña"
-        placeholder="Ingrese su contraseña" required
-      />
-      <p>Al crear una cuenta estás aceptando los <a href="terms and Conditions.html">Terminos y Condiciones</a></p>
-      <input class="botons" type="submit" value="Registrar">
-      <p><a href="login.html">¿Ya Tengo Cuenta?</a></p>
+      <div class="welcome">
+        <div class="info">
+          <a href="index.html"
+          ><h1 class="header__name">Tecno<span>blogger</span></h1></a>
+          <h2>Bienvenido</h2>
+          <p>Para unirte a nuestra comunidad por favor inicia sesión con tus datos</p>
+          <a href="login.html"><input type="button" value="Iniciar sesión" id="sign-in" /></a>
+        </div>
+      </div>
+
+      <div class="information">
+        <div class="information__childs">
+          <h2 class="header__h2">Crear una Cuenta</h2>
+          <form class="form">
+            <label>
+              <i class="bx bx-user"></i>
+              <input
+                class="controls"
+                type="text"
+                name="nombres"
+                id="nombres"
+                placeholder="Ingrese su nombre"
+                required
+              />
+            </label>
+
+            <label>
+              <i class="bx bx-user"></i>
+              <input
+                class="controls"
+                type="text"
+                name="apellidos"
+                id="apellidos"
+                placeholder="Ingrese su apellido"
+                required
+              />
+            </label>
+
+            <label>
+              <i class="bx bx-envelope"></i>
+              <input
+                class="controls"
+                type="email"
+                name="correo"
+                id="correo"
+                placeholder="Ingrese su correo"
+                required
+              />
+            </label>
+
+            <label>
+              <i class="bx bx-lock-alt"></i>
+              <input
+                class="controls"
+                type="password"
+                name="contraseña"
+                id="contraseña"
+                placeholder="Ingrese su contraseña"
+                required
+              />
+            </label>
+          </form>
+          <p>
+            Al crear una cuenta estás aceptando los
+          </br>
+            <a href="terms and Conditions.html">Terminos y Condiciones</a>
+          </p>
+          <input class="botons" type="submit" value="Registrar" />
+          <div class="social__message">
+            <div class="line"></div>
+            <p class="message">Registrarse con cuentas sociales</p>
+            <div class="line"></div>
+          </div>
+          <div class="footer__subtitle">
+            <div class="footer__links">
+              <i class="bx bxl-google"></i>
+            </div>
+            <div class="footer__links">
+              <i class="bx bxl-facebook-circle"></i>
+            </div>
+            <div class="footer__links">
+              <i class="bx bxl-linkedin-square"></i>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   </body>
 </html>

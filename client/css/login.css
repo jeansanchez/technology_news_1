@@ -1,16 +1,19 @@
+/* ========== ESTILOS GENERALES =========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 body {
-  background-color: #f5f5f5;
+  background-color: #f5f5f5 ;
   font-family: "Work Sans", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
+
+/* ========== CONTAINER =========== */
 .container__form {
   display: flex;
   max-width: 900px;
@@ -22,6 +25,7 @@ body {
   box-shadow: 7px 13px 37px #c4c4c4;
 }
 
+/* ========== LADO IZQUIERDO CARD =========== */
 .welcome {
   width: 40%;
   display: flex;
@@ -32,12 +36,29 @@ body {
   border-bottom-left-radius: 20px;
 }
 
+.header__name {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 900;
+  color: #3e4148;
+  background-color: #f5f5f5;
+  border-radius: 20px;
+  margin: 20px 0;
+  & span {
+      color:#18a7ea;
+  } 
+}
+.welcome a {
+  text-decoration: none;
+}
+
 .info {
   width: 100%;
   padding: 0 30px;
   & h2 {
     font-size: 2.5rem;
     color: #fff;
+    margin: 20px 0;
   }
   & p {
     margin: 15px 0;
@@ -61,7 +82,7 @@ body {
   color: #14b8b4;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-
+/* ========== LADO DERECHO CARD =========== */
 .information {
   width: 60%;
   display: flex;
@@ -73,27 +94,14 @@ body {
   border-bottom-right-radius: 20px;
 }
 
-.header__name {
-  text-align: center;
-  font-size: 2rem;
-  font-weight: 900;
-  line-height: 40px;
-  color: #3e4148;
-  text-decoration: none;
-  & span {
-    color: #18a7ea;
-  }
-}
-.information h1 {
-  text-decoration: none;
-}
+
+
 .header__h2 {
   color: #555;
   font-size: 1.8rem;
   margin: 12px 0;
   font-weight: 700;
 }
-
 
 .information__childs a {
   text-decoration: none;
@@ -104,6 +112,7 @@ body {
 }
 
 .information__childs {
+  width: 80%;
   padding: 0 30px;
 }
 
@@ -192,15 +201,18 @@ body {
 }
 
 .botons {
-  width: 50%;
   background: #18a7ea;
   border: none;
-  padding: 12px;
+  padding: 10px 20px;
   color: white;
   margin: 16px 0;
   font-size: 16px;
   border-radius: 20px;
   cursor: pointer;
+}
+
+.botons:hover {
+  background-color: #0880c1;
 }
 
 @media screen and (max-width:750px) {
